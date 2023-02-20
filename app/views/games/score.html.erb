@@ -1,0 +1,12 @@
+<h1>Results</h1>
+
+<% if @good == false %>
+  <p>Sorry but <strong><%="#{@word}"%></strong> can't be built our of <%=@letters%></p>
+<% elsif @found == false %>
+  <p>Sorry but <strong><%="#{@word}"%></strong> does not seem to be a valid English word</p>
+<% else %>
+  <p><strong>Congratulations!</strong><%="#{@word}"%> is a valid English word</p>
+<% end %>
+
+<%= link_to "try again", "/new" %>
+Ò
